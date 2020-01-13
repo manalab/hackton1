@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseUsersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\KHAWLA\DESKTOP\WINDOWSFORMSAPPLICATIONSPEECH\WINDOWSFORMSAPPLICATIONSPEECH\DATABASEUSERS.MDF.dbo.Deaf' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Deaf">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phone" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="imges">
+    <Key>
+      <PropertyRef Name="imageName" />
+    </Key>
+    <Property Name="imageName" Type="int" Nullable="false" />
+    <Property Name="image" Type="image" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\KHAWLA\DESKTOP\WINDOWSFORMSAPPLICATIONSPEECH\WINDOWSFORMSAPPLICATIONSPEECH\DATABASEUSERS.MDF.dbo.Stutter' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Stutter">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phone" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DatabaseUsersModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="imges" EntityType="Self.imges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deaf" EntityType="Self.Deaf" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Deaf].[id] AS [id], 
+    [Deaf].[name] AS [name], 
+    [Deaf].[phone] AS [phone], 
+    [Deaf].[Username] AS [Username], 
+    [Deaf].[Password] AS [Password]
+    FROM [dbo].[Deaf] AS [Deaf]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Stutter" EntityType="Self.Stutter" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Stutter].[id] AS [id], 
+    [Stutter].[name] AS [name], 
+    [Stutter].[phone] AS [phone], 
+    [Stutter].[Username] AS [Username], 
+    [Stutter].[Password] AS [Password]
+    FROM [dbo].[Stutter] AS [Stutter]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

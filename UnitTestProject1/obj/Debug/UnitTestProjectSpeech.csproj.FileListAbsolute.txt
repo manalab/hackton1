@@ -1,0 +1,2 @@
+C:\Users\khawla\Desktop\WindowsFormsApplicationSpeech\UnitTestProject1\obj\Debug\UnitTestProjectSpeech.csprojAssemblyReference.cache
+C:\Users\khawla\Desktop\WindowsFormsApplicationSpeech\UnitTestProject1\obj\Debug\UnitTestProjectSpeech.csproj.CoreCompileInputs.cache
