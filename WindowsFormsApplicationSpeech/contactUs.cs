@@ -47,7 +47,8 @@ namespace WindowsFormsApplicationSpeech
             {
                 smtp.Send(message);
                 MessageBox.Show("Email send successfully", "Email", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
