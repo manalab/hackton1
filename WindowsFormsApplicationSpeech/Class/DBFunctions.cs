@@ -33,7 +33,7 @@ namespace WindowsFormsApplicationSpeech
             //Access File Of The Database Exists in The Project
 
             //conObj.ConnectionString =(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\USER\DESKTOP\WINDOWSFORMSAPPLICATIONSPEECH\WINDOWSFORMSAPPLICATIONSPEECH\DATABASEUSERS.MDF;Integrated Security=True");
-            conObj.ConnectionString =(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ps\Desktop\hackton1\WindowsFormsApplicationSpeech\WindowsFormsApplicationSpeech\DatabaseUsers.mdf;Integrated Security=True");
+            conObj.ConnectionString =(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ayam9\OneDrive\שולחן העבודה\‏‏תיקיה חדשה\hackton1\WindowsFormsApplicationSpeech\DatabaseUsers.mdf;Integrated Security=True");
 
 
             conObj.Open();//فتح الرابط

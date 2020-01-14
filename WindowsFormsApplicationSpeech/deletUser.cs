@@ -27,7 +27,7 @@ namespace WindowsFormsApplicationSpeech
                 MessageBox.Show("deaf is deleted");
                 textBox1.Text = "";
                 this.Close();
-             
+
 
 
             }

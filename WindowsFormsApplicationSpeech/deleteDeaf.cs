@@ -24,7 +24,7 @@ namespace WindowsFormsApplicationSpeech
 
         {
             deaf C = new deaf(textBox1.Text);
-          
+
             if (C.deleteDeaf())
             {
                 MessageBox.Show("You been delete!");
