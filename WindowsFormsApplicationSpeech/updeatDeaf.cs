@@ -34,8 +34,8 @@ namespace WindowsFormsApplicationSpeech
             deaf d = new deaf(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
             d.updateDeaf();
             MessageBox.Show("The Deaf  information is Updated");
-            
-          
+
+
             textBox1.Enabled = true;
             textBox1.Text = "";  //empty id text
             textBox2.Text = "";  // empty name text
@@ -59,7 +59,7 @@ namespace WindowsFormsApplicationSpeech
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\khawla\Desktop\WindowsFormsApplicationSpeech\WindowsFormsApplicationSpeech\DatabaseUsers.mdf;Integrated Security=false");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ps\Desktop\123\hackton1\WindowsFormsApplicationSpeech\DatabaseUsers.mdf;Integrated Security=false");
             con.Open();
             // MessageBox.Show(" bd....");
             // Password = '" + (textBox5.Text)+ "'

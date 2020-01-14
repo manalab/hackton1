@@ -22,7 +22,7 @@ namespace WindowsFormsApplicationSpeech
         {
             DataTable dt;
 
-           stutter s = new stutter(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+            stutter s = new stutter(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
             dt = s.UpdateExssisStutter();
             if (dt != null)
             {
